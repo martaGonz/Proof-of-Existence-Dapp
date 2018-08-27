@@ -4,7 +4,7 @@ import "./SafeMath.sol";
 import "./Ownable.sol";
 import "./Pausable.sol";
 
-contract ProofOfExistence {
+contract ProofOfExistence is Ownable, Pausable, Destructible {
 
 struct File {
 	address addr;
