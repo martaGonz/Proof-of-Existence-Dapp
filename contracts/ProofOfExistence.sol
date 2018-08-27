@@ -59,7 +59,7 @@ contract ProofOfExistence is Ownable, Pausable, Destructible {
  ///  getter function to get an array of Tags
   function getTagsArrayByHash(bytes32 _hash) constant public returns(bytes32[]) {
     return hashToTags[_hash];
-  
+  }
 
   ///  getter function to get an array of sha3 hash of ipfs hashs
   function getHashArrayByAddress(address _addr) constant public returns(bytes32[]) {
