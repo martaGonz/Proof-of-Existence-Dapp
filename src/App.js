@@ -41,12 +41,6 @@ class App extends Component {
   }
 
   instantiateContract() {
-    /*
-     * SMART CONTRACT EXAMPLE
-     *
-     * Normally these functions would be called in the context of a
-     * state management library, but for convenience I've placed them here.
-     */
 
     const contract = require('truffle-contract')
     const proofOfExistence = contract(ProofOfExistenceContract)
@@ -55,10 +49,10 @@ class App extends Component {
     // Get accounts.
     this.state.web3.eth.getAccounts((error, accounts) => {
       proofOfExistence.deployed().then((instance) => {
-        this.simpleStorageInstance = instance
+        this.proofOfExistenceInstance = instance
         this.setState({ account: accounts[0] })
         // Get the value from the contract to prove it worked.
-        return this.proofOfExistenceInstance.get.call(accounts[0])
+        return this.proofOfExistenceInstance.getHashArrayByTag.call(accounts[0])
       }).then((ipfsHash) => {
         // Update state with the result.
         return this.setState({ ipfsHash })
@@ -84,7 +78,7 @@ class App extends Component {
         console.error(error)
         return
       }
-      this.proofOfExistenceInstance.set(result[0].hash, { from: this.state.account }).then((r) => {
+      this.proofOfExistenceInstance.AddFile(result[0].hash, { from: this.state.account }).then((r) => {
         return this.setState({ ipfsHash: result[0].hash })
         console.log('ifpsHash', this.state.ipfsHash)
       })
