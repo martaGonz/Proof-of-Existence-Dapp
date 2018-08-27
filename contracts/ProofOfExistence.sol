@@ -62,8 +62,8 @@ contract ProofOfExistence is Ownable, Pausable, Destructible {
   }
 
   ///  getter function to get an array of sha3 hash of ipfs hashs
-  function getHashArrayByAddress() constant public returns(bytes32[]) {
-    return addressToHash[msg.sender].listOfFiles;
+   function getHashArrayByAddress(address _addr) constant public returns(bytes32[]) {
+   return addressToHash[_addr];
   }
 
 
