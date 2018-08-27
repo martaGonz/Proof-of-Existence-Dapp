@@ -20,7 +20,7 @@ File[] public listOfFiles;
 mapping (address => uint) public count;
 mapping (address => bytes32) addressToHash;
 mapping (bytes32 => string) hashToTags;
- mapping (bytes32 => bytes32[]) public tagToHash;
+mapping (bytes32 => bytes32[]) public tagToHash;
 
  // Initialize Ownable contract
 constructor() public {
