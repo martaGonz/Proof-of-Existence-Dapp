@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import SimpleStorageContract from '../build/contracts/SimpleStorage.json'
+import ProofOfExistenceContract from '../build/contracts/ProofOfExistence.json'
 import getWeb3 from './utils/getWeb3'
 import ipfs from './ipfs'
 
@@ -49,16 +49,16 @@ class App extends Component {
      */
 
     const contract = require('truffle-contract')
-    const simpleStorage = contract(SimpleStorageContract)
-    simpleStorage.setProvider(this.state.web3.currentProvider)
+    const proofOfExistence = contract(ProofOfExistenceContract)
+    proofOfExistence.setProvider(this.state.web3.currentProvider)
 
     // Get accounts.
     this.state.web3.eth.getAccounts((error, accounts) => {
-      simpleStorage.deployed().then((instance) => {
+      proofOfExistence.deployed().then((instance) => {
         this.simpleStorageInstance = instance
         this.setState({ account: accounts[0] })
         // Get the value from the contract to prove it worked.
-        return this.simpleStorageInstance.get.call(accounts[0])
+        return this.proofOfExistenceInstance.get.call(accounts[0])
       }).then((ipfsHash) => {
         // Update state with the result.
         return this.setState({ ipfsHash })
@@ -84,7 +84,7 @@ class App extends Component {
         console.error(error)
         return
       }
-      this.simpleStorageInstance.set(result[0].hash, { from: this.state.account }).then((r) => {
+      this.proofOfExistenceInstance.set(result[0].hash, { from: this.state.account }).then((r) => {
         return this.setState({ ipfsHash: result[0].hash })
         console.log('ifpsHash', this.state.ipfsHash)
       })
@@ -95,7 +95,7 @@ class App extends Component {
     return (
       <div className="App">
         <nav className="navbar pure-menu pure-menu-horizontal">
-          <a href="#" className="pure-menu-heading pure-menu-link">IPFS File Upload DApp</a>
+          <a href="#" className="pure-menu-heading pure-menu-link">Proof of Existence DApp</a>
         </nav>
 
         <main className="container">
