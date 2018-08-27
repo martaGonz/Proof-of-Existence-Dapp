@@ -1,4 +1,4 @@
-# "Proof of Existence dApp" README
+# "Proof of Existence dApp" 
 
 ## Description  
 This application allows users to register and obtain time stamped picture
@@ -66,8 +66,6 @@ Start using Dapp
 
 ```
 http://localhost:3000/
-
-## How to use this dApp
 
 
 
