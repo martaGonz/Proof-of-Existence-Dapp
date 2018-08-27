@@ -15,10 +15,17 @@ struct File {
 
 File[] public listOfFiles;
 
+
+ // List of state variables
 mapping (address => uint) public count;
 mapping (address => bytes32) addressToHash;
 mapping (bytes32 => string) hashToTags;
  mapping (bytes32 => bytes32[]) public tagToHash;
+
+ // Initialize Ownable contract
+constructor() public {
+	Ownable(msg.sender);
+}
 
 
 function AddFile(address _addr, string _tag, string _ipfsHash) {
