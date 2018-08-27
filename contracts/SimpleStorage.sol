@@ -1,5 +1,8 @@
 pragma solidity ^0.4.23;
-import
+
+import "./SafeMath.sol";
+import "./Ownable.sol";
+import "./Pausable.sol";
 
 contract ProofOfExistence {
 
