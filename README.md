@@ -18,7 +18,54 @@ Users can retrieve necessary reference data about their uploaded items to allow 
 
 ## How to set up
 <!--  -->
-***
+
+Clone the project repository.
+
+```
+git clone https://github.com/martagonz/proof-of-existence-dapp.git
+```
+
+Go to the project directory
+
+```
+cd proof-of-existence-dapp
+```
+
+Install node modules
+
+```
+npm install
+```
+
+Compile Smart Contracts
+
+```
+truffle compile
+```
+
+Start a development blockchain network
+
+```
+ganache-cli
+```
+
+Migrate smart contracts
+
+```
+truffle migrate [--reset]
+```
+
+
+Start Dapp
+
+```
+npm run start
+```
+
+Start using Dapp
+
+```
+http://localhost:3000/
 
 ## How to use this dApp
 
