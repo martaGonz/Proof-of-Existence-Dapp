@@ -9,7 +9,7 @@
 
 This is a proof of existence DApp. This DApp provides a UI that allows users to interact with IPFS as well as smart contracts on the Ethereum blockchain. 
 
-All image and video data are stored in **IPFS (Inter Planetary File System)** in order to become decentralized. 
+To make the storage system completely decentralized, the images are saved in **IPFS (Inter Planetary File System)** using **Infura**.
 
 Users can retrieve necessary reference data about their uploaded items to allow other people to verify the data authenticity.
 
@@ -33,13 +33,13 @@ Your image's address, tag and timestamp is recorded on the Ethereum Blockchain
 Clone the project repository.
 
 ```
-git clone https://github.com/martagonz/proof-of-existence-dapp.git
+$ git clone https://github.com/martagonz/proof-of-existence-dapp.git
 ```
 
 Go to the project directory
 
 ```
-cd proof-of-existence-dapp
+$ cd proof-of-existence-dapp
 ```
 
 Install node modules
