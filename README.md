@@ -2,6 +2,11 @@
 
 <!--  -->
 
+![techStack](/public/techStack.png?raw=true "techStack")
+
+
+![truffle-react-box](/public/truffle-react-box.png?raw=true "truffle-react-box")
+
 ## Description  
 
 This is a proof of existence DApp. This DApp provides a UI that allows users to interact with IPFS as well as smart contracts on the Ethereum blockchain. 
@@ -12,13 +17,15 @@ Users can retrieve necessary reference data about their uploaded items to allow 
 
 ***
 
-### Upload File "/".
-Main page of the application
+### Upload Image.
+
+Choose an Image, input a tag and timestamp as strings.  When loaded, click Submit
 
 ![uploadimage](/public/uploadimage.png?raw=true "uploadimage")
 
-### Check File "/".
-Main page of the application
+### Check Image.
+
+Your image's address, tag and timestamp is recorded on the Ethereum Blockchain
 
 ![checkimage](/public/checkimage.png?raw=true "checkimage")
 
@@ -73,12 +80,6 @@ Run tests
 $ truffle test 
 ```
 
-## Built with
-<!--  -->
-
-![techStack](/public/techStack.png?raw=true "techStack")
-
-![truffle-react-box](/public/truffle-react-box.png?raw=true "truffle-react-box")
 
 ## Acknowledgments
 
