@@ -127,18 +127,19 @@ class App extends Component {
     return (
       <div className="App">
         <nav className="navbar pure-menu pure-menu-horizontal">
-          <a href="#" className="pure-menu-heading pure-menu-link">Proof of Existence DApp</a>
+          <img src={`https://raw.githubusercontent.com/martaGonz/Proof-of-Existence-DApp/master/public/dragon.png`} alt=""/>
+          <a href="#" className="pure-menu-heading pure-menu-link">Dragon Box Proof of Existence DApp</a>
         </nav>
 
         <main className="container">
           <div className="pure-g">
             <div className="pure-u-1-1">
-            <img src={`https://raw.githubusercontent.com/martaGonz/Proof-of-Existence-DApp/master/public/dragon.png`} alt=""/>
+              <br/>
+              <br/>
               <h1>Dragon Box </h1>
-              <hr />
               <p>Proof of Existence Decentralized App that save your images on the Ethereum Blockchain and on the and the IPFS or Inter Planetary File System</p>
               <p>Each file and all of the blocks within it are given a unique fingerprint called a cryptographic hash.</p>
-              
+              <hr />
               <h2>Upload Image</h2>
               <form onSubmit={this.onSubmit} >
                 <input type='file' onChange={this.captureFile} />
@@ -148,6 +149,8 @@ class App extends Component {
                 <p>Timestamp</p>
                 <input type='text' value={this.state.timeStamp} onChange={event => this.setState({timeStamp: event.target.value})} />
                 <input type='submit' />
+                <br/>
+              <br/>
               </form>
               <hr />
               <h2>Check Image</h2>
@@ -159,6 +162,7 @@ class App extends Component {
               </form>
               <p>Address: {this.state.checkAddress}</p>
               <p>Tag: {this.state.checkTag}</p>
+
               <p>Timestamp: {this.state.checkTimeStamp}</p>
 
             </div>
