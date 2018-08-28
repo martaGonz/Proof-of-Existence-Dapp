@@ -2,28 +2,27 @@
 
 ***
 
-## Restricting Access
-We can never restrict any human or contracts from reading transactions or contract’s state variables.
+## Summary
+This document gives an overview of the design patterns used to implement the application. Please go through the following section for more details.
 
-That said, I restrict who can make modifications to the contract’s state or call critical contract’s functions.
+ipfs 
 
-By introducing "modifier" that allow only owner (creator of the contract) to use a function. In my case, I implement "onlyOwner" modifier to circuit breaker switch function that I will explain next.
+### Curcuit Breaker (Emergency Stop)
+This contract inherits from standard zeppelin `Pausable` and `Ownable` contracts. Only the `owner` of the
+contract can pause the contract and restrict any further state mutation.
 
-`  modifier onlyOwner() {
-    require(msg.sender == owner);
-    _;
-  `
+### Immortal
+With the emergency stop and upgradability, there is no particular reason why this contracts has to expire at
+a certain moment in time. Therefore the mortality design pattern is not applied.
+
+
+
+Since the scope of this application is limited to adding, editing and verifying picture data, the use of several design patterns was not relavant. These patterns include:
+
+- Auto Deprecation: This isn't necessary since the contract will persist indefinitely once deployed to the mainnet.
+- Mortal: The immutability of the picture storage would be compromised if users knew their pictures could vanish when the contract is destroyed.
+- Pull over Push Payments: This isn't relavant since this contract doesn't provide payment functionality.
+- State Machine: Since the overall state of this application doesn't progress to different stages, the State Machine pattern is not necessary.
+- Speed Bump: This isn't necessary during testing and soft-launch, but could be useful to implement to prevent users from flooding the picture upload functionality with requests.
 
 ***
-
-<!-- ## Circuit Breaker (State Machine)
-It is convenient to have certain stages or states in which contracts or functions behave differently. Again using "modifier" will do a great job. 
-
-In my case, the "circuitBreaker" modifier controls on/off switch of a function. With this switch modifier I can turn off main function when something hazardous happens. 
-
-`  modifier circuitBreaker() {
-    require(!isEmergency);
-    _;
-  }`
-
- -->

@@ -1,7 +1,10 @@
 # "Proof of Existence dApp" 
 
+![metamask](https://github.com/yzhang1994/proof-of-existence-dapp/blob/master/public/images/metamask.png?raw=true "metamask")
+![ipfs](https://github.com/yzhang1994/proof-of-existence-dapp/blob/master/public/images/ipfs.png?raw=true "ipfs")
+
 ## Description  
-This application allows users to register and obtain time stamped picture
+This is a proof of existence DApp. This DApp provides a UI that allows users to interact with IPFS as well as smart contracts on the Ethereum blockchain. This application allows users to register and obtain time stamped picture
 
 All image and video data are stored in **IPFS (Inter Planetary File System)** in order to become decentralized. 
 
@@ -67,6 +70,11 @@ Start using Dapp
 ```
 http://localhost:3000/
 
+```
 
 
+## Testing
 
+```sh
+$ truffle test 
+```
