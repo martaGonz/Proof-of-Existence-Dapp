@@ -1,4 +1,4 @@
-# "Proof of Existence dApp" 
+# "Proof of Existence DApp" 
 
 <!--  -->
 
@@ -81,6 +81,6 @@ $ truffle test
 
 ## Acknowledgments
 
-My fellow ConsenSys Academy students
+My fellow students at ConsenSys Academy 
 * William Goi
 * Natacha de la Rosa
