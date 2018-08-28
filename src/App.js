@@ -133,9 +133,12 @@ class App extends Component {
         <main className="container">
           <div className="pure-g">
             <div className="pure-u-1-1">
-              <h1>Your Image</h1>
-              <p>Proof of Existence Dragon DApp saves your images on the Ethereum Blockchain</p>
-              <img src={`https://raw.githubusercontent.com/martaGonz/Proof-of-Existence-DApp/master/public/dragon.png`} alt=""/>
+            <img src={`https://raw.githubusercontent.com/martaGonz/Proof-of-Existence-DApp/master/public/dragon.png`} alt=""/>
+              <h1>Dragon Box </h1>
+              <hr />
+              <p>Proof of Existence Decentralized App that save your images on the Ethereum Blockchain and on the and the IPFS or Inter Planetary File System</p>
+              <p>Each file and all of the blocks within it are given a unique fingerprint called a cryptographic hash.</p>
+              
               <h2>Upload Image</h2>
               <form onSubmit={this.onSubmit} >
                 <input type='file' onChange={this.captureFile} />
@@ -157,6 +160,7 @@ class App extends Component {
               <p>Address: {this.state.checkAddress}</p>
               <p>Tag: {this.state.checkTag}</p>
               <p>Timestamp: {this.state.checkTimeStamp}</p>
+
             </div>
           </div>
         </main>
