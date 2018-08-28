@@ -1,6 +1,6 @@
 # "Proof of Existence dApp" 
 
-![techstack](https://github.com/martagonz/proof-of-existence-dapp/techstack.png?raw=true "techstack")
+![techstack](https://github.com/martagonz/proof-of-existence-dapp/techstack.png "techstack")
 
 ## Description  
 
