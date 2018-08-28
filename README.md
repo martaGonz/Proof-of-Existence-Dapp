@@ -17,7 +17,7 @@ Users can retrieve necessary reference data about their uploaded items to allow 
 
 ### Upload Image.
 
-Choose an Image, input a tag and timestamp as strings.  When loaded, click Submit
+Choose an Image, input a tag and timestamp as strings.  When loaded, click Submit. Metamask will ask you to confirm transaction with ETH Fee
 
 ![uploadimage](/public/uploadimage.png?raw=true "uploadimage")
 
