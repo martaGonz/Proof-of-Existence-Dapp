@@ -5,8 +5,6 @@
 ![techStack](/public/techStack.png?raw=true "techStack")
 
 
-![truffle-react-box](/public/truffle-react-box.png?raw=true "truffle-react-box")
-
 ## Description  
 
 This is a proof of existence DApp. This DApp provides a UI that allows users to interact with IPFS as well as smart contracts on the Ethereum blockchain. 
