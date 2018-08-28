@@ -25,7 +25,7 @@ Choose an Image, input a tag and timestamp as strings.  When loaded, click Submi
 
 Your image's address, tag and timestamp is recorded on the Ethereum Blockchain and you can check it when selecting the image and submiting.
 
-![checkimage](/public/checkimag2.png?raw=true "checkimage2")
+![checkimage](/public/checkimage2.png?raw=true "checkimage2")
 
 ## How to set up
 <!--  -->
