@@ -65,8 +65,7 @@ Start Dapp
 $ npm run start
 ```
 
-
-## Testing
+Run tests
 
 ```sh
 $ truffle test 
