@@ -1,6 +1,7 @@
 # "Proof of Existence dApp" 
 
-![techstack](https://github.com/martagonz/proof-of-existence-dapp/techstack.png "techstack")
+![metamask](https://github.com/martagonz/proof-of-existence-dapp/master/public/techStack.png?raw=true "metamask")
+<!--  -->
 
 ## Description  
 
