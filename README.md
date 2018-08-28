@@ -19,13 +19,13 @@ Users can retrieve necessary reference data about their uploaded items to allow 
 
 Choose an Image, input a tag and timestamp as strings.  When loaded, click Submit. Metamask will ask you to confirm transaction with ETH Fee
 
-![uploadimage](/public/uploadimage2.png?raw=true "uploadimage2")
+![uploadimage](/public/uploadimage.png?raw=true "uploadimage")
 
 ### Check Image.
 
 Your image's address, tag and timestamp is recorded on the Ethereum Blockchain and you can check it when selecting the image and submiting.
 
-![checkimage](/public/checkimage2.png?raw=true "checkimage2")
+![checkimage](/public/checkimage.png?raw=true "checkimage")
 
 ## How to set up
 <!--  -->
