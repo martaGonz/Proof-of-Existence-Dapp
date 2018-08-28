@@ -37,39 +37,32 @@ cd proof-of-existence-dapp
 Install node modules
 
 ```
-npm install
+$ npm install
 ```
 
 Compile Smart Contracts
 
 ```
-truffle compile
+$ truffle compile
 ```
 
 Start a development blockchain network
 
 ```
-ganache-cli
+$ ganache-cli
 ```
 
 Migrate smart contracts
 
 ```
-truffle migrate [--reset]
+$  truffle migrate --reset
 ```
 
 
 Start Dapp
 
 ```
-npm run start
-```
-
-Start using Dapp
-
-```
-http://localhost:3000/
-
+$ npm run start
 ```
 
 
