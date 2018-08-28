@@ -58,7 +58,6 @@ Migrate smart contracts
 $  truffle migrate --reset
 ```
 
-
 Start Dapp
 
 ```
