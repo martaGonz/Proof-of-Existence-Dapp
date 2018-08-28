@@ -1,5 +1,5 @@
-# "Proof of Existence DApp" 
-
+# "Proof of Existence Dragon DApp" 
+![dragon](/public/dragon.png?raw=true "dragon")
 <!--  -->
 
 ![techStack](/public/techStack.png?raw=true "techStack")
