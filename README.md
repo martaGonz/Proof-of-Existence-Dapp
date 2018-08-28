@@ -1,7 +1,5 @@
 # "Proof of Existence dApp" 
 
-![techStack](/public/techStack.png?raw=true "techStack")
-
 <!--  -->
 
 ## Description  
@@ -13,6 +11,16 @@ All image and video data are stored in **IPFS (Inter Planetary File System)** in
 Users can retrieve necessary reference data about their uploaded items to allow other people to verify the data authenticity.
 
 ***
+
+### Upload File "/".
+Main page of the application
+
+![uploadimage](/public/uploadimage.png?raw=true "uploadimage")
+
+### Check File "/".
+Main page of the application
+
+![checkimage](/public/checkimage.png?raw=true "checkimage")
 
 ## How to set up
 <!--  -->
@@ -64,3 +72,16 @@ Run tests
 ```sh
 $ truffle test 
 ```
+
+## Built with
+<!--  -->
+
+![techStack](/public/techStack.png?raw=true "techStack")
+
+![truffle-react-box](/public/truffle-react-box.png?raw=true "truffle-react-box")
+
+## Acknowledgments
+
+My fellow ConsenSys Academy students
+* William Goi
+* Natacha de la Rosa
