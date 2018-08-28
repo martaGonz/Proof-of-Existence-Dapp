@@ -21,7 +21,6 @@ Common race condition attacks such as Reentrancy does not apply here, including:
 - Optionally require functions to be called by the current contract owner
 - Renounce contract ownership
 
-
 ## Circuit Breaker
 
 * __Pausable contract:__ for emergency stop functionality.
